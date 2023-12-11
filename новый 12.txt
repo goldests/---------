@@ -1,0 +1,49 @@
+ <html>
+<head>
+<title>название страницы</title>
+</head>
+<body bgcolor="FFFFFF">
+<h1 align="center">главный заголовок</h1>
+<p align="justify"><img src="images/название фотографии.jpg"width="400" height="225" align="left"/>  
+<p style="font-size:18;"></>любой текст</font>
+<p style="font-size:25px;" align="center"wigth="400">
+
+<h2 align="center">второй заголовок,но уже таблицы</h2>
+<table align="center"wigth="400">
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+<tr>
+<td><p style="font-size:25px;">текст таблицы</p></td>
+</tr>
+</table>
+<a href="(документ который будет открываться).html">ссылка</a></p>
+</body>
+</html>
