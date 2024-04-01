@@ -1,0 +1,50 @@
+.table-wrap {
+    position: relative;
+}
+
+.table-wrap__inner {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+}
+
+.table-wrap table {
+    width: 50%;
+}
+
+.table-wrap .arrow-scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    background: Silver;
+    opacity: 0.3;
+    text-indent: -9999px;
+    border: none;
+}
+
+.table-wrap .arrow-scroll:active {
+    opacity: 1;
+}
+
+.table-wrap .arrow-scroll::before {
+    content: '<';
+    text-indent: 0;
+    color: DimGrey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.table-wrap .arrow-scroll.arrow-right {
+    left: auto;
+    right: 0;
+}
+
+.table-wrap .arrow-scroll.arrow-right::before {
+    content: '>';
+}
+
+

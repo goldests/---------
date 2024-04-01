@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  width: 420px;
+  height: 420px; /* Установите размеры контейнера по вашему усмотрению */
+  overflow: hidden;  /* Скрыть содержимое, выходящее за границы контейнера */
+}
+
+.photo-container {
+  display: flex;
+  width: max-content; /* Установите желаемую ширину блока со слайдами */
+  transition: transform 0.5s ease; /* Добавляет плавность при прокрутке */
+}
+
+.photo-container img {
+  flex: none; /* Изображения не растягиваются */
+  margin: 0 10px; /* Отступ между слайдами */
+}
+
+.scroll-left, .scroll-right {
+  position: absolute;
+  top: calc(50% - 25px); /* Разместить кнопки посередине вертикали */
+  padding: 5px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  z-index: 1; /* Разместить кнопки поверх слайдов */
+}
+.scroll-left { left: 0; }
+.scroll-right { right: 0; }

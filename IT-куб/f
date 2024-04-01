@@ -1,0 +1,23 @@
+
+<div class="container">
+    <div class="photo-container">
+      <img src="88.jpg" alt="Photgo 1">
+      <img src="Logo_CUBE.jpg" alt="Phfoto 2">
+      <img src="робот.jpg" alt="Photo 3">
+    </div>
+     
+     
+     
+     
+       <div class="trading-page__pricing-table-wrap table-wrap">
+    <div class="table-wrap__inner">
+        <table>
+          
+        <tr><img src="88.jpg" alt="Description">
+
+        
+        
+        <img src="робот.jpg" alt="Description"></tr>
+      
+        </table>
+    </div>
