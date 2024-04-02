@@ -3,43 +3,8 @@
     <head>
         <title>IT-куб Славгород </title>  
         <link rel="stylesheet" href="IT-куб.css">
-        <link rel="shortcut icon" href="Logo_CUBE.jpg" type="Logo_CUBE/jpg">
-        
-        <style>
-          .container {
-            position: relative;
-            width: 480px;
-            height: 225px;
-            overflow: hidden;
-          }
-        
-          .photo-container {
-            display: flex;
-            width: max-content;
-            transition: transform 0.5s ease;
-          }
-        
-          .photo-container img {
-            flex: none;
-            margin: 0 10px;
-            width: 400px; /* Установите необходимую ширину изображений */
-          }
-        
-          .scroll-left, .scroll-right {
-            position: absolute;
-            top: calc(50% - 25px);
-            padding: 5px;
-            border: none;
-            background: transparent;
-            font-size: 24px;
-            z-index: 1;
-          }
-          .scroll-left { left: 0; }
-          .scroll-right { right: 0; }
-        </style> 
-    </head>
-
-          
+        <link rel="shortcut icon" href="Logo_CUBE.jpg" type="Logo_CUBE/jpg">    
+    </head> 
           <body>
 <!-- Меню навигации по сайту -->
 <ul class="navbar">
@@ -47,29 +12,102 @@
   </ul>
   <!-- Main content -->
   <h1>Педагогический состав</h1>
-  <div class="container">
-    <div class="photo-container">
-      <img src="88.jpg" alt="Photo 1">
-      <img src="Logo_CUBE.jpg" alt="Photo 2">
-      <img src="робот.jpg" alt="Photo 3">
+  <style>
+    [class^="scroll"] {
+     position: relative;
+     height: 10em;
+     line-height: 10em;
+     padding: 0 3em;
+    }
+    [class^="scroll"] input {
+     display: none;
+    }
+    [class^="scroll"] div {
+     height: 100%;
+     overflow: hidden;
+     white-space: nowrap;
+     word-wrap: normal;
+     font-size: 0;
+    }
+    [class^="scroll"] img {
+     position: relative;
+     right: 0em;
+     width: 25%;
+     height: 100%;
+     transition: .5s;
+    }
     
-    </div>
-
-
-
-
+    [class^="scroll"] label {
+     cursor: pointer;
+     font-weight: 600;
+     font-size: 3em;
+    }
+    [class^="scroll"] input:nth-of-type(1):checked ~ label:nth-of-type(2):after,
+    [class^="scroll"] input:nth-of-type(2):checked ~ label:nth-of-type(3):after,
+    [class^="scroll"] input:nth-of-type(3):checked ~ label:nth-of-type(4):after,
+    [class^="scroll"] input:nth-of-type(4):checked ~ label:nth-of-type(5):after,
+    [class^="scroll"] input:nth-of-type(5):checked ~ label:nth-of-type(6):after,
+    [class^="scroll"] input:nth-of-type(6):checked ~ label:nth-of-type(7):after {
+     content: "\3009";
+     position: absolute;
+     right: 0;
+    }
+    [class^="scroll"] input:nth-of-type(2):checked ~ label:nth-of-type(1):after,
+    [class^="scroll"] input:nth-of-type(3):checked ~ label:nth-of-type(2):after,
+    [class^="scroll"] input:nth-of-type(4):checked ~ label:nth-of-type(3):after,
+    [class^="scroll"] input:nth-of-type(5):checked ~ label:nth-of-type(4):after,
+    [class^="scroll"] input:nth-of-type(6):checked ~ label:nth-of-type(5):after,
+    [class^="scroll"] input:nth-of-type(7):checked ~ label:nth-of-type(6):after {
+     content: "\3008";
+     position: absolute;
+     left: 0;
+    }
+    
+    [class^="scroll"] input:nth-of-type(2):checked ~ div img {right: 25%;}
+    [class^="scroll"] input:nth-of-type(3):checked ~ div img {right: 50%;}
+    [class^="scroll"] input:nth-of-type(4):checked ~ div img {right: 75%;}
+    [class^="scroll"] input:nth-of-type(5):checked ~ div img {right: 100%;}
+    [class^="scroll"] input:nth-of-type(6):checked ~ div img {right: 125%;}
+    [class^="scroll"] input:nth-of-type(7):checked ~ div img {right: 150%;}
+    </style>
+    
+    <div class="scroll">
+    
+    <input type="radio" id="l0" name="raz" checked="checked"/>
+    <input type="radio" id="l1" name="raz"/>
+    <input type="radio" id="l2" name="raz"/>
+    <input type="radio" id="l3" name="raz"/>
+    <input type="radio" id="l4" name="raz"/>
+    <input type="radio" id="l5" name="raz"/>
+    <input type="radio" id="l6" name="raz"/>
+    
+    <label for="l0"></label>
+    <label for="l1"></label>
+    <label for="l2"></label>
+    <label for="l3"></label>
+    <label for="l4"></label>
+    <label for="l5"></label>
+    <label for="l6"></label>
+    
     <div>
-    <button class="scroll-left">‹</button>
-    <button class="scroll-right">›</button>
-  </div>
-
-  
+    <img src="88.jpg" alt=""/>
+    <img src="Logo_CUBE.jpg" alt=""/>
+    <img src="робот.jpg" alt=""/>
+    <img src="99.jpg" alt=""/>
+    <img src="100" alt=""/>
+    <img src="" alt=""/>
+    <img src="" alt=""/>
+    <img src="" alt=""/>
+    <img src="" alt=""/>
+    <img src="" alt=""/>
+    </div>
+    
+    </div> 
   <!-- Sign and date the page, it's only polite! -->
     <style type="text/css">
         body {
           color: rgb(0, 0, 0);
           background-color: #00FFFF  }
         </style>
-
           </body>
 </html>
