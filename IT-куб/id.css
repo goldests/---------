@@ -1,0 +1,8 @@
+
+.inline-block{
+    display: block;
+    margin: auto;
+}
+
+.td img { vertical-align: top; }
+.td img { vertical-align: bottom; }

@@ -6,6 +6,11 @@
         <link rel="shortcut icon" href="Logo_CUBE.jpg" type="Logo_CUBE/jpg">  
         <link rel="stylesheet"  href="ii.css">
         <link rel="stylesheet"  href="сдвиг.css">
+        <link rel="stylesheet"  href="id.css">
+        
+        
+                
+
     </head> 
           <body>
 <!-- Меню навигации по сайту -->
@@ -27,7 +32,7 @@
      display: none;
     }
     [class^="scroll"] div {
-     height: 100%;
+     height: 135%;
      overflow: hidden;
      white-space: nowrap;
      word-wrap: normal;
@@ -35,10 +40,10 @@
     }
     [class^="scroll"] img {
      position: relative;
-     right: 0em;
+     right: 15em;
      width: 260px;
-     height: 150px;
-     transition: .5s;
+     height: 240px;
+     transition: .3s;
     }
     
     [class^="scroll"] label {
@@ -59,7 +64,8 @@
     [class^="scroll"] input:nth-of-type(3):checked ~ label:nth-of-type(2):after,
     [class^="scroll"] input:nth-of-type(4):checked ~ label:nth-of-type(3):after,
     [class^="scroll"] input:nth-of-type(5):checked ~ label:nth-of-type(4):after,
-    [class^="scroll"] input:nth-of-type(6):checked ~ label:nth-of-type(5):after {
+    [class^="scroll"] input:nth-of-type(6):checked ~ label:nth-of-type(5):after,
+    [class^="scroll"] input:nth-of-type(7):checked ~ label:nth-of-type(6):after {
      content: "\3008";
      position: absolute;
      left: 0;
@@ -70,6 +76,10 @@
     [class^="scroll"] input:nth-of-type(4):checked ~ div img {right: 75%;}
     [class^="scroll"] input:nth-of-type(5):checked ~ div img {right: 100%;}
     [class^="scroll"] input:nth-of-type(6):checked ~ div img {right: 125%;}
+    [class^="scroll"] input:nth-of-type(7):checked ~ div img {right: 150%;}
+    [class^="scroll"] input:nth-of-type(8):checked ~ div img {right: 175%;}
+    [class^="scroll"] input:nth-of-type(9):checked ~ div img {right: 200%;}
+    [class^="scroll"] input:nth-of-type(10):checked ~ div img {right: 225%;}
     </style>
     
     <div class="scroll">
@@ -94,13 +104,13 @@
     <img src="5.jpg" alt=""/>
     </div>
     </div> 
-    <table>
+    <table class="inline-block" border="3" bordercolor="black" bgcolor="#ffffff" > 
       <tr>
-        <td><img src="1.jpg" wight="380px" height="210"><p>55</p></td>
-        <td><img src="2.jpg" wight="380px" height="210"><p>99</p></td>
-        <td><img src="3.jpg" wight="380px" height="210"><p>44</p></td>
-        <td><img src="4.jpg" wight="380px" height="210"><p>33</p></td>
-        <td><img src="5.jpg" wight="380px" height="210"><p>22</p></td>
+        <td class="td img"><img src="1.jpg" wight="360px" height="205" class="img2" ><p>Бабич Виктория<br>Дмитриевна<br>Педагог дополнительного образования IT-куба:<br><b>программирование Python, VR/AR разработки</b></p></td>
+        <td class="td img"><img src="2.jpg" wight="360px" height="205" class="img2" ><p>Сибина Надежда<br>Григорьевна<br>Педагог дополнительного образования IT-куба:<br><b>Программирование роботов, Основы алгоритмики и логики</b></p></td>
+        <td class="td img"><img src="3.jpg" wight="360px" height="205" class="img2"><p>Бабанина Анастасия<br>Сергеевна<br>Педагог дополнительного образования IT-куба:<br><b>программирование Java, мобильные разработки</b></p></td>
+        <td class="td img"><img src="4.jpg" wight="360px" height="205" class="img2"><p>Иванова Яна<br>Александровна<br>Методист ЦЦОД «IT-куб»<br>г.Славгород<br>         </p></td>
+        <td class="td img"><img src="5.jpg" wight="360px" height="205" class="img2"><p>Конограй Кристина<br>Петровна<br>Руководитель ЦЦОД «IT-куб»<br>г.Славгород<br>    </p></td>
     </tr>
     </table>
   <!-- Sign and date the page, it's only polite! -->
